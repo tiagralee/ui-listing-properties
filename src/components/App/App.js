@@ -1,17 +1,32 @@
 import React from 'react';
-import List from '../List/List'
-import { useDispatch, useSelector } from 'react-redux'
+import SavedList from '../SavedList/SavedList'
+import ResultList from '../ResultList/ResultList'
+import { BodyWrapper, ListWrapper } from './App_styles'
 
 const App = () => {
-  const savedProperties = useSelector(state => state.home.savedProperties);
-  const allProperties = useSelector(state => state.home.allProperties);
-  
   return (
-    <div>
-      <List> all properties</List>
-      {savedProperties.map(x => console.log(x))};
-      <List> saved properties </List>
-    </div>
+    <BodyWrapper>
+      <div className="info">
+        <h1>Listing properties</h1>
+        <span> Nov 2019 | Made by Yiqi</span>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <h4>Results</h4>
+            <ListWrapper>
+              <ResultList/>
+            </ListWrapper>
+          </div>
+          <div className="col">
+            <h4>Saved Properties</h4>
+            <ListWrapper>
+              <SavedList />
+            </ListWrapper>
+          </div>
+        </div>
+      </div>
+    </BodyWrapper>
   );
 };
 
