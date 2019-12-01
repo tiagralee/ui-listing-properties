@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import propertyReducer from './listing_reducer';
+import propertyReducer from './propertyReducer';
 
 // 
 const rootReducer = combineReducers({
-    home: propertyReducer
+    property: propertyReducer
 });
 
 export default rootReducer;

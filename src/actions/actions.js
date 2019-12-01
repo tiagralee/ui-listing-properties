@@ -1,3 +1,4 @@
+//that functions that create actions
 import ACTION_TYPES from './action_types';
 
 export const saveProperty = propertyId => ({
@@ -10,6 +11,9 @@ export const removeProperty = propertyId => ({
   propertyId
 });
 
-export const getProperties = () => ({
-  type: ACTION_TYPES.GET_PROPERTY_LISTING
+export const getPropertyListing = (properties) => ({
+  type: ACTION_TYPES.GET_PROPERTY_LISTING,
+  properties
 });
+
+// ACTION CREATORS!!
