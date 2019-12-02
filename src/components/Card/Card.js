@@ -2,7 +2,6 @@ import React from 'react'
 import { CardWrapper, CardContent, CardBody, CardDetails, CardButton, CardHeader} from './Card_styles'
 import PropTypes from 'prop-types'
 
-
 const Card = (props) => {
     return(
          <CardWrapper>
@@ -15,7 +14,7 @@ const Card = (props) => {
                     <img src={props.image} alt="property pic"/>
                 </CardContent>  
                 <CardDetails>
-                    <span> Price: {props.price}</span>
+                    <span>Price: {props.price}</span>
                     <CardButton disabled={props.isSaved} onClick={props.onChange}>{props.text}</CardButton>
                 </CardDetails>
             </CardBody>

@@ -1,0 +1,104 @@
+exports[`Property Card render renders ADD Card correctly 1`] = `
+<div
+  className="sc-bdVaJa hqSkKk">
+  <div
+    className="sc-bwzfXH lYyWI">
+    <div
+      className="sc-htpNat lkEqNO"
+      color="#000000">
+      <img
+        alt="agency logo"
+        src="https://i2.au.reastatic.net/170x32/3015ba9710c7e3ddc2ac30f45fd7906df5b04e442a7f6948f75a6029b8b871e2/main.gif" />
+    </div>
+    <div
+      className="sc-bxivhb liLdHl">
+      <img
+        alt="property pic"
+        src="https://i2.au.reastatic.net/640x480/5e84d96722dda3ea2a084d6935677f64872d1d760562d530c3cabfcb7bcda9c2/main.jpg" />
+    </div>
+    <div
+      className="sc-ifAKCX fpmPlX">
+      <span>
+        Price: 
+        $526,500
+      </span>
+      <button
+        className="sc-EHOje ctXRyJ"
+        disabled={false}
+        onClick={[Function]}>
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Property Card render renders REMOVE Card correctly 1`] = `
+<div
+  className="sc-bdVaJa hqSkKk">
+  <div
+    className="sc-bwzfXH lYyWI">
+    <div
+      className="sc-htpNat lkEqNO"
+      color="#000000">
+      <img
+        alt="agency logo"
+        src="https://i2.au.reastatic.net/170x32/3015ba9710c7e3ddc2ac30f45fd7906df5b04e442a7f6948f75a6029b8b871e2/main.gif" />
+    </div>
+    <div
+      className="sc-bxivhb liLdHl">
+      <img
+        alt="property pic"
+        src="https://i2.au.reastatic.net/640x480/5e84d96722dda3ea2a084d6935677f64872d1d760562d530c3cabfcb7bcda9c2/main.jpg" />
+    </div>
+    <div
+      className="sc-ifAKCX fpmPlX">
+      <span>
+        Price: 
+        $526,500
+      </span>
+      <button
+        className="sc-EHOje ctXRyJ"
+        disabled={undefined}
+        onClick={[Function]}>
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Property Card render renders SAVED Card correctly 1`] = `
+<div
+  className="sc-bdVaJa hqSkKk">
+  <div
+    className="sc-bwzfXH lYyWI">
+    <div
+      className="sc-htpNat lkEqNO"
+      color="#000000">
+      <img
+        alt="agency logo"
+        src="https://i2.au.reastatic.net/170x32/3015ba9710c7e3ddc2ac30f45fd7906df5b04e442a7f6948f75a6029b8b871e2/main.gif" />
+    </div>
+    <div
+      className="sc-bxivhb liLdHl">
+      <img
+        alt="property pic"
+        src="https://i2.au.reastatic.net/640x480/5e84d96722dda3ea2a084d6935677f64872d1d760562d530c3cabfcb7bcda9c2/main.jpg" />
+    </div>
+    <div
+      className="sc-ifAKCX fpmPlX">
+      <span>
+        Price: 
+        $526,500
+      </span>
+      <button
+        className="sc-EHOje ctXRyJ"
+        disabled={false}
+        onClick={[Function]}>
+        Saved
+      </button>
+    </div>
+  </div>
+</div>
+`;

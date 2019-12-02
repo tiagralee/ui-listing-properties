@@ -1,6 +1,7 @@
 import Card from '../Card/Card'
 import React from 'react'
 import * as Actions from '../../actions/actions'
+import CARDSTATUS from '../Shared/CardStatus';
 import { useDispatch, useSelector } from 'react-redux'
 
 const ResultList = () => {
@@ -9,8 +10,11 @@ const ResultList = () => {
         properties: state.property.results,
         savedProperties: state.property.saved,
     }));
-    const savedIds = savedProperties.map(property => property.id);
-    const isSaved = (propertId) => savedIds.includes(propertId);
+
+    const isSaved = (propertId) => {
+        const savedIds = savedProperties.map(property => property.id);
+        return savedIds.includes(propertId);
+    };
 
     return (
         properties.length > 0? 
@@ -24,7 +28,7 @@ const ResultList = () => {
                     image={property.mainImage}
                     agency_colors={property.agency.brandingColors.primary}
                     agency_logo={property.agency.logo}
-                    text={isSaved(property.id)? "Saved": "Add"}
+                    text={isSaved(property.id)? CARDSTATUS.SAVED: CARDSTATUS.ADD}
                     isSaved={isSaved(property.id)}
                     onChange={() => dispatch(Actions.saveProperty(property.id))}
                    />
@@ -35,6 +39,5 @@ const ResultList = () => {
     )
    
 }
-
 
 export default ResultList;
