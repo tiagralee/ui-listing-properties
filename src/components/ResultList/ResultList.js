@@ -26,8 +26,8 @@ const ResultList = () => {
                     key={property.id}
                     price={property.price}
                     image={property.mainImage}
-                    agency_colors={property.agency.brandingColors.primary}
-                    agency_logo={property.agency.logo}
+                    agencyColors={property.agency.brandingColors.primary}
+                    agencyLogo={property.agency.logo}
                     text={isSaved(property.id)? CARDSTATUS.SAVED: CARDSTATUS.ADD}
                     isSaved={isSaved(property.id)}
                     onChange={() => dispatch(Actions.saveProperty(property.id))}

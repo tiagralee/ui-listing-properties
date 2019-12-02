@@ -1,24 +1,24 @@
 import React from 'react';
 import SavedList from '../SavedList/SavedList'
 import ResultList from '../ResultList/ResultList'
-import { BodyWrapper, ListWrapper } from './App_styles'
+import { BodyWrapper, ListWrapper, Intro} from './App_styles'
 
 const App = () => {
   return (
     <BodyWrapper>
-      <div className="info">
+      <Intro>
         <h1>Listing properties</h1>
-        <span> Nov 2019 | Made by Yiqi</span>
-      </div>
+        <span> Dec 2019 | Made by Yiqi</span>
+      </Intro>
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-lg-6 col-sm-12">
             <h4>Results</h4>
             <ListWrapper>
               <ResultList/>
             </ListWrapper>
           </div>
-          <div className="col">
+          <div className="col-lg-6 col-sm-12">
             <h4>Saved Properties</h4>
             <ListWrapper>
               <SavedList />

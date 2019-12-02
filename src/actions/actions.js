@@ -16,4 +16,4 @@ export const getPropertyListing = (properties) => ({
   properties
 });
 
-// ACTION CREATORS!!
+// ACTION CREATORS

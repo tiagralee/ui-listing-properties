@@ -7,8 +7,8 @@ const Card = (props) => {
          <CardWrapper>
             <CardBody>
                 {/* agency logo and color */}
-                <CardHeader color={props.agency_colors}>
-                    <img src={props.agency_logo} alt="agency logo"></img>
+                <CardHeader color={props.agencyColors}>
+                    <img src={props.agencyLogo} alt="agency logo"></img>
                 </CardHeader>
                 <CardContent>
                     <img src={props.image} alt="property pic"/>
@@ -25,8 +25,8 @@ const Card = (props) => {
 Card.prototype = {
     isSaved: PropTypes.bool,
     price: PropTypes.string,
-    agency_logo: PropTypes.string,
-    agency_colors: PropTypes.string,
+    agencyLogo: PropTypes.string,
+    agencyColors: PropTypes.string,
     image: PropTypes.string,
     text: PropTypes.string,
     onChange: PropTypes.func

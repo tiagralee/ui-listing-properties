@@ -1,19 +1,27 @@
 import styled from 'styled-components';
+import * as GS from '../Shared/GlobalStyle';
 
 export const BodyWrapper = styled.div`
-    margin: 5rem auto;
+    margin: 20px auto;
     text-align: center;
-    .info {
-        margin: 2rem;
+`;
+export const Intro = styled.div`
+    margin: 2rem;
+    h1 {
+        font-size: ${GS.fontSize.desktop.h1};  
+        @media(max-width: ${GS.media.xs_m}) {
+            font-size: ${GS.fontSize.mobi.h1};
+        }     
     }
     span {
-        font-size: 1.2rem;
-        font-weight: 100;
-        color: #666666;
+        color: ${GS.colors.grayText};
     }
-`;
 
+`
 export const ListWrapper = styled.div`
-    width: 70%;
+    width: 65%;
     margin: auto;
+    @media(max-width: ${GS.media.xxs_m}){
+        width:80%;
+    }
 `;
