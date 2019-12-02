@@ -2,6 +2,7 @@
   "name": "yiqi-listing-property",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
